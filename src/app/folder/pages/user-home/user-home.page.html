@@ -9,13 +9,10 @@
 
 
 <ion-content [fullscreen]="true">
-    <ion-header collapse="condense">
-        <ion-toolbar>
-            <ion-title size="large">hhh</ion-title>
-        </ion-toolbar>
-    </ion-header>
-
-    <div id="container">
-        Here Will be Content For user Home
-    </div>
+    <ion-grid style="height: 100%">
+        <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%">
+            <b style="color: blue"> Points : {{rewardPoints}}</b>
+            <ion-button expand="block" (click)="openScanPage()">Start Scan</ion-button>
+        </ion-row>
+    </ion-grid>
 </ion-content>
