@@ -7,6 +7,18 @@ const routes: Routes = [
   {
     path: '',
     component: FolderPage
+  },
+  {
+    path: 'user-home',
+    loadChildren: () => import('./pages/user-home/user-home.module').then( m => m.UserHomePageModule)
+  },
+  {
+    path: 'user-profile',
+    loadChildren: () => import('./pages/user-profile/user-profile.module').then( m => m.UserProfilePageModule)
+  },
+  {
+    path: 'qrcode-scan',
+    loadChildren: () => import('./pages/qrcode-scan/qrcode-scan.module').then( m => m.QrcodeScanPageModule)
   }
 ];
 
