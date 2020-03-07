@@ -11,6 +11,6 @@
 </ion-header>
 
 <ion-content>
-
-    QR Stuff Here
+    <video #video [hidden]="!scanActive" width="100%"></video>
+    <canvas #canvas hidden></canvas>
 </ion-content>
