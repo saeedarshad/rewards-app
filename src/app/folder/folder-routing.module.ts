@@ -20,7 +20,15 @@ const routes: Routes = [
   {
     path: 'qrcode-scan',
     loadChildren: () => import('./pages/qrcode-scan/qrcode-scan.module').then( m => m.QrcodeScanPageModule)
+  },  {
+    path: 'generate-qrcode',
+    loadChildren: () => import('./pages/generate-qrcode/generate-qrcode.module').then( m => m.GenerateQrcodePageModule)
+  },
+  {
+    path: 'admin-home',
+    loadChildren: () => import('./pages/admin-home/admin-home.module').then( m => m.AdminHomePageModule)
   }
+
 ];
 
 @NgModule({

@@ -18,6 +18,11 @@ export class AppComponent implements OnInit {
             icon: 'home'
         },
         {
+            title: 'Admin Home',
+            url: '/folder/pages/admin-home',
+            icon: 'home'
+        },
+        {
             title: 'Profile',
             url: '/folder/pages/user-profile',
             icon: 'settings'
