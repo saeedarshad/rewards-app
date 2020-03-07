@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button
+                    [text]="'Back'"
+                    [icon]="'arrow-back'">
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title>QR Code</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid style="height: 100%">
+        <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%">
+            <ngx-qrcode *ngIf="showQrCode"
+                        [qrc-element-type]="'url'"
+                        [qrc-value]="qrCodeValue"
+                        qrc-version = "20">
+            </ngx-qrcode>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
